@@ -81,13 +81,18 @@ WSGI_APPLICATION = 'shopproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
-        'NAME': 'Pract_P4',
-        'USER': 'postgres',
-        'PASSWORD': '1'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
+    # Для PostgreSQL (закомментировано):
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'HOST': '127.0.0.1',
+    #     'PORT': '5432',
+    #     'NAME': 'Pract_P4',
+    #     'USER': 'postgres',
+    #     'PASSWORD': '1'
+    # }
 }
 
 
